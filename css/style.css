@@ -1,0 +1,146 @@
+#main{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+	background-color: #ccc5b9;
+}
+
+p{
+	font-size: large;
+}
+
+ul{
+	font-size: medium;
+}
+
+h1{
+	font-weight: bold;
+	font-size: x-large;
+	color: #252422;
+}
+
+h2{
+	font-weight: bold;
+	font-size: x-large;
+	text-decoration: underline;
+}
+
+a:link {
+	color: #cfa875;
+}
+  
+a:visited {
+	text-decoration: underline;
+	color: #8a3817;
+}
+  
+a:hover {
+	color: #eb5e28;
+}
+
+a:active {
+	color: #eb5e28;
+} 
+
+#title{
+	border: solid 4px;
+	border-radius: 20px;
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-bottom: 20px;
+	padding: 1%;
+	min-width: 600px;
+	border-color: #252422;
+}
+
+#tribute-info{
+	font-size: medium;
+	border: solid 4px;
+	border-radius: 20px;
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-bottom: 20px;
+	padding: 1%;
+	min-width: 600px;
+	border-color: #252422;
+}
+
+#image{
+	height: auto;
+	border-radius: 20px;
+	max-width: 100%;
+}
+
+#img-div{
+	width: 20%;
+	min-width: 150px;
+	border-radius: 30px;
+	font-size: small;
+	font-style: italic;
+	padding: 1.8%;
+	opacity: 0.97;
+	transition: 0.6s;
+}
+
+#img-div:hover{
+		color: #E8E5E1;
+		background-color: #807b77;
+		opacity: 1.0;
+	  	-webkit-transform: scale(1.05);
+	  	-ms-transform: scale(1.05);
+	  	transform: scale(1.05);
+}
+
+.navigation{
+	width: 30%;
+	height: 35px;
+	display: flex;
+	justify-content:safe;
+	align-items:center;
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-top: 1%;
+	margin-bottom: 40px;
+	padding: 0.5%;
+}
+
+.button{
+	text-align: center;
+	border: solid 2px;
+	opacity: 0.95;
+	border-radius: 10px;
+	max-width: 120px;
+	min-width: 100px;
+	height: 25px;
+	margin: 3px;
+	padding: 5px;
+	transition: 0.3s;
+}
+
+.button:hover{
+	color: #E8E5E1;
+	background-color: #807b77;
+	opacity: 1.0;
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+.center{
+		margin: auto;
+		text-align: center;
+		border: solid 4px;
+}
+
+.light{
+		color: #252422;
+		background-color: #fffcf2;
+		border-color: #252422;
+}
+
+.dark{
+		color: #ccc5b9;
+		background-color: #403d39;
+		border-color: #252422;
+}
