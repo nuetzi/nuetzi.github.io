@@ -14,6 +14,8 @@ However, it can last a VERY long time, which made it ideal for killing time.
 
 --------------------------
 
+The current URL for the game is: https://nuetzi.github.io
+
 To play the game as presented, simply click the red "Click to play" button, which starts the first round.
 The page automatically generates a new shuffled deck and gives each side half every time it is reloaded.
 I included a shuffle option for each side, because scenarios can arise resulting in an ednless loop of each side
