@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.mainBody {
+    background-size: 100%;
+    background-image: linear-gradient(to bottom right, #707070, #181818);
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template: 20% 60% 20% / 20% 60% 20%;
+    align-items: center;
+    justify-items: center; 
+}
+
+h1 {
+    color: #faf9f5;
+    font-size: 40pt;
+    text-align: center;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.gameArea {
+    grid-area: 2 / 2;
+    width: 60%;
+    min-width: 650px;
+    height: 50%;
+    min-height: 500px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom right, green, #006000);
+    display: grid;
+    gap: 10px;
+    grid-template: 20% 35% 10% 15% 20% / repeat(6, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.playButton {
+    width: 20%;
+    min-width: 200px;
+    height: 15%;
+    min-height: 50px;
+    grid-row: 1;
+    grid-column: 1 / 7;
+    color: #eae9e5;
+    border: 2px solid black;
+    border-radius: 30px;
+    background-image: linear-gradient(to bottom right, #ba1711, #da4741);
+    box-shadow: 0 3px 5px #282828;
+    font-size: larger;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.playButton:hover {
+    color: white;
+    border: 2px solid white;
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+     transform: scale(1.02);
+}
+
+.playButton:active {
+    position: relative;
+    box-shadow: 0px 1px 3px black;
+    top: 1.5px;
+}
+
+.status {
+    color: #faf9f5;
+    grid-row: 4;
+    grid-column: 2 / 6;
+    padding-bottom: 80px;
+}
+
+.card {
+    display: inline-block;
+    position: relative;
+    width: 105px;
+    height: 150px;
+    font-family: 'Cardo', serif;
+    font-size: xx-large;
+    line-height: 60px;
+    border-radius: 7px;
+}
+  
+.red {
+    color: #da1711;
+}
+
+.black {
+    color: #181815;
+}
+
+.empty {
+    border: 1px solid black;
+}
+
+.obverse {
+    text-align: center;
+    border: 1px solid #151718;
+    background-color: #faf9f5;
+    box-shadow: 0 3px 5px #282828;
+    cursor: pointer;
+}
+
+.reverse {
+    border: 1px solid #151718;
+    background-image: url("./cardBack.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 3px 5px #282828;
+    cursor: pointer;
+}
+
+#deck1 {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#active1 {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+#active2 {
+    grid-row: 2;
+    grid-column: 4;
+}
+
+#deck2 {
+    grid-row: 2;
+    grid-column: 6;
+}
+
+.playerCount {
+    grid-row: 3;
+    grid-column: 1;
+    padding-bottom: 40px;
+    width: 120px;
+    font-size: medium;
+    text-align: center;
+}
+
+.opponentCount {
+    grid-row: 3;
+    grid-column: 6;
+    padding-bottom: 40px;
+    width: 120px;
+    font-size: medium;
+    text-align: center;
+}
+
+.resetButton {
+    width: 20%;
+    min-width: 200px;
+    height: 15%;
+    min-height: 50px;
+    margin-bottom: 60px;;
+    grid-row: 5;
+    grid-column: 2 / 6;
+    color: #eae9e5;
+    border: 2px solid black;
+    border-radius: 30px;
+    background-image: linear-gradient(to bottom right, #181815, #383835);
+    box-shadow: 0 3px 5px #282828;
+    font-size: larger;
+    text-align: center;
+    line-height: 50px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.resetButton:hover {
+    color: white;
+    border: 2px solid white;
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+     transform: scale(1.02);
+}
+
+.resetButton:active {
+    position: relative;
+    box-shadow: 0px 1px 3px black;
+    top: 1.5px;
+}
+
+.shuffleButton {
+    width: 10%;
+    min-width: 100px;
+    height: 10%;
+    min-height: 25px;
+    margin-bottom: 100px;;
+    color: #eae9e5;
+    border: 2px solid black;
+    border-radius: 30px;
+    background-image: linear-gradient(to bottom right, #383835, #585855);
+    box-shadow: 0 3px 5px #282828;
+    font-size: small;
+    text-align: center;
+    line-height: 25px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#shuffle1 {
+    grid-row: 4;
+    grid-column: 1;
+}
+
+#shuffle2 {
+    grid-row: 4;
+    grid-column: 6;
+}
+
+.shuffleButton:hover {
+    color: white;
+    border: 2px solid white;
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+     transform: scale(1.02);
+}
+
+.shuffleButton:active {
+    position: relative;
+    box-shadow: 0px 1px 3px black;
+    top: 1.5px;
+}
