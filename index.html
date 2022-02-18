@@ -4,43 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>A Tribute to the Universe</title>
+    <script defer src="game.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap" rel="stylesheet">
+    <title>War (the card game)</title>
 </head>
 <body>
-    <div id="main">
-
-    <div class="navigation">
-        <a href="https://en.wikipedia.org/wiki/Matter" target="_blank" rel="noopener noreferrer"><div class="button link dark" id="box1">Matter</div></a>
-        <a href="https://en.wikipedia.org/wiki/Energy" target="_blank" rel="noopener noreferrer"><div class="button link dark" id="box2">Energy</div></a>
-        <a href="https://en.wikipedia.org/wiki/Outer_space" target="_blank" rel="noopener noreferrer"><div class="button link dark" id="box3">Space</div></a>
-        <a href="https://en.wikipedia.org/wiki/Time" target="_blank" rel="noopener noreferrer"><div class="button link dark" id="box4">Time</div></a>
-        <a href="https://en.wikipedia.org/wiki/Life" target="_blank" rel="noopener noreferrer"><div class="button link dark" id="box5">Life</div></a>
-        <a href="https://en.wikipedia.org/wiki/Consciousness" target="_blank" rel="noopener noreferrer"><div class="button link dark" id="box6">Consciousness</div></a>        
-    </div>
-
-    <div id="title" class="light">
-    <p><h1>A Tribute to the Universe:</h1></p>
-    <p>The universe is my favorite place to be. It has so much going on:</p>
-    <ul>
-        <li>It's where I keep all my stuff.</li>
-        <li>There's always something interesting happening.</li>
-        <li>All my favorite people hang out there.</li>
-        <li>Everyone is invited!</li>
-    </ul>
-    </div>
-
-    <div>
-        <p id="tribute-info" class="light">The universe is everything we know. It is everything we have ever experienced; every sight, sound, feeling, thought. It is you. It is me. It's an incomprehensibly vast and complex sytem. Here is a page to appreciate existence and what we are a part of. Thank you for visiting.</p>
-    </div>
-
-    <div id="img-div" class="dark center">
-    <a id="tribute-link" href="https://en.wikipedia.org/wiki/Universe" target="_blank" rel="noopener noreferrer"><img id="image" src="https://stsci-opo.org/STScI-01EVT3DRKS4G76VV3675WVYX3R.jpg" width="1076" height="1200"></a>
-    <br>
-    <id="img-caption">Click the image to learn more about this amazing place</id>
-    </div>
-
+    <div class="mainBody">
+        <div class="gameArea">
+            <div class="playButton">CLICK to play</div>
+            <div id="deck1" class="card reverse player"></div>
+            <div id="active1" class="card empty player"><br></div>
+            <div id="active2" class="card empty opponent"><br></div>
+            <div id="deck2" class="card reverse opponent"></div>
+            <div class="playerCount">Player 1</div>
+            <div class="opponentCount">Player 2</div>
+            <div class="status"><b> Click the start button to begin </b></div>
+            <div id="shuffle1" class="shuffleButton">Shuffle</div>
+            <div class="resetButton">RESET</div>
+            <div id="shuffle2" class="shuffleButton">Shuffle</div>
+        </div>
     </div>
 </body>
 </html>
-
