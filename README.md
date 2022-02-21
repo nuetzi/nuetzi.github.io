@@ -14,13 +14,13 @@ However, it can last a VERY long time, which made it ideal for killing time.
 
 --------------------------
 
-The current URL for the game is: https://nuetzi.github.io
-
 To play the game as presented, simply click the red "Click to play" button, which starts the first round.
 The page automatically generates a new shuffled deck and gives each side half every time it is reloaded.
 I included a shuffle option for each side, because scenarios can arise resulting in an ednless loop of each side
 trading cards back and forth. In real life, we sometimes resorted to this too.
 There is also a button to reset the whole game and start over, which resets the deck and player stacks.
+
+For quicker play and convenience, I also enabled the option to press any character button on the keyboard to progress play.
 
 --------------------------
 
@@ -44,6 +44,6 @@ show up as black was a little tricky in itself.
 
 I do think I managed to get it right by manipulating the CSS class correctly in the JS code.
 
-I was unable to totally fix the end-game edge cases, so there are some questionable scenarios that still arise.
+There might still be some questionable scenarios that arise at the end game. I think I fixed them all, but it's possible I missed a scenario.
 
 -------------------------
