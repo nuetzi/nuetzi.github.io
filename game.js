@@ -133,7 +133,7 @@ const playRound = (playerDeck, opponentDeck) => {
             if (roundCards[1].value === roundCards[0].value) {
                 document.querySelector(".status").innerHTML = "WAR!"
                 alert(`                                                     WAR! 
-                                                Click OK to continue`);
+                                               Click OK to continue`);
                 if (playerDeck.length < 4 && roundCards[1] <= roundCards[0]) {
                     document.querySelector("#deck1").classList.remove("reverse");
                     document.querySelector("#deck1").classList.add("empty");
